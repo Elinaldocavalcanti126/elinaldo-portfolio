@@ -1461,7 +1461,9 @@ section {
   }
   
   .hero-right {
-    order: -1;
+    order: 0;
+    display: flex;
+    justify-content: center;
   }
   
   .skills-content {
@@ -2370,7 +2372,7 @@ section {
   .hero-right {
     display: flex;
     justify-content: center;
-    order: -1;
+    order: 0;
   }
 
   .hero-buttons {
