@@ -812,7 +812,7 @@ class VisitCounter {
 
     try {
       // hits.sh — free, no signup, counts unique page views
-      const url = 'https://hits.sh/elinaldocavalcanti126.github.io/portfolio.json';
+      const url = 'https://hits.sh/elinaldocavalcanti126.github.io/elinaldo-portfolio.json';
       const res  = await fetch(url);
       const data = await res.json();
       const total = parseInt(data.total_count || data.count || 0);
@@ -978,3 +978,4 @@ window.addEventListener('load', () => {
     }
   });
 });
+
