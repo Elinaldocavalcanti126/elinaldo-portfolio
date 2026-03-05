@@ -2355,3 +2355,228 @@ section {
   color: var(--accent-orange);
   font-weight: 700;
 }
+
+/* ==========================================
+   MOBILE COMPLETE FIX
+   ========================================== */
+
+@media (max-width: 768px) {
+
+  /* --- Hero --- */
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-right {
+    display: flex;
+    justify-content: center;
+    order: -1;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-badge {
+    justify-content: center;
+  }
+
+  /* Typewriter centered */
+  .hero-subtitle {
+    text-align: center;
+  }
+
+  /* Float icons hidden on small screens — they overflow */
+  .float-icon {
+    display: none;
+  }
+
+  /* Status badge centered */
+  .status-badge {
+    white-space: nowrap;
+    font-size: 0.8rem;
+    padding: 8px 14px;
+  }
+
+  /* --- About features grid --- */
+  .about-features {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* --- Skills grid --- */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Services grid --- */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Certificates grid --- */
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Timeline --- */
+  .timeline-item {
+    padding: 24px 20px;
+  }
+
+  .timeline-tags {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  /* --- Section headers --- */
+  .section-header {
+    text-align: center;
+  }
+
+  /* --- Filter buttons wrap nicely --- */
+  .projects-filter {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 0.82rem;
+  }
+
+  /* --- Contact --- */
+  .contact-item {
+    padding: 20px;
+  }
+
+  /* --- WhatsApp button position --- */
+  .whatsapp-float {
+    bottom: 24px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    font-size: 1.6rem;
+  }
+
+  /* --- Scroll top button --- */
+  .scroll-top {
+    bottom: 90px;
+    right: 20px;
+  }
+
+  /* --- Cert cards --- */
+  .cert-thumb {
+    height: 140px;
+  }
+
+  /* --- Lightbox full screen on mobile --- */
+  .lightbox-content {
+    width: 95vw;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* --- Hero title smaller --- */
+  .hero-title {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .gradient-text {
+    font-size: 2.2rem;
+  }
+
+  /* --- Avatar smaller --- */
+  .avatar-border {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* --- Stats row --- */
+  .hero-stats {
+    gap: 20px;
+  }
+
+  .stat-item h3 {
+    font-size: 1.8rem;
+  }
+
+  .stat-item p {
+    font-size: 0.8rem;
+  }
+
+  /* --- About features single column --- */
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Section title --- */
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  /* --- Service cards --- */
+  .service-card {
+    padding: 24px 20px;
+  }
+
+  .service-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 1.4rem;
+  }
+
+  /* --- Skill bars --- */
+  .skill-bar-item {
+    margin-bottom: 16px;
+  }
+
+  /* --- Footer visit counter --- */
+  .visit-counter {
+    justify-content: center;
+  }
+
+  /* --- Nav logo smaller --- */
+  .logo-name {
+    font-size: 0.9rem;
+  }
+
+  /* --- Typewriter font size --- */
+  .typewriter-text,
+  .typewriter-cursor {
+    font-size: 1rem;
+  }
+
+  /* --- Timeline compact --- */
+  .timeline-date {
+    font-size: 0.78rem;
+  }
+
+  .timeline-item h3 {
+    font-size: 1rem;
+  }
+
+  /* --- Filter buttons single row scroll --- */
+  .projects-filter {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .projects-filter::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn {
+    flex-shrink: 0;
+  }
+}
